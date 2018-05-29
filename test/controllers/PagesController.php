@@ -12,12 +12,9 @@ class PagesController
     public function home()
     {
         // show views
-        loadView('theme/header');
-        loadView('pages/home', [
-            'name' => 'Tom',
-            'age' => 20,
-        ]);
-        loadView('theme/footer');
+        loadView('assets/header');
+        loadView('pages/home');
+        loadView('assets/footer');
     }
 
     /**
@@ -27,9 +24,9 @@ class PagesController
     public function about()
     {
         // show views
-        loadView('theme/header');
+        loadView('assets/header');
         loadView('pages/about');
-        loadView('theme/footer');
+        loadView('assets/footer');
     }
 
 }

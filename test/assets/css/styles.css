@@ -1,0 +1,37 @@
+body {
+  background-color: #ffe177;
+  font-family: Arial;
+  font-size: 18px;
+  margin: 8% 12%;
+  /* padding: 10px; */
+  border: 1px solid blue;
+  border-radius: 50px
+}
+
+.nav{
+  width: 20%;
+  float: left;
+  height: 70vh;
+}
+
+.page-wrapper{
+  width: 80%;
+}
+
+.header-wrapper {
+  width: 100%;
+  border-bottom: 1px solid blue;
+  padding: 10px
+}
+
+li{
+  list-style-type: none;
+}
+
+tr {
+  text-align: left;
+}
+
+td {
+    padding: 4px;
+}

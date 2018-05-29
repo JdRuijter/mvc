@@ -30,9 +30,9 @@ class LocationsController{
     }
 
     public function addForm(){
-      loadView('theme/header');
+      loadView('assets/header');
       loadView('locations/form');
-      loadView('theme/footer');
+      loadView('assets/footer');
     }
 
     public function add(){
@@ -48,9 +48,9 @@ class LocationsController{
     }
 
     public function updateForm(){
-      loadView('theme/header');
+      loadView('assets/header');
       loadView('locations/form-update');
-      loadView('theme/footer');
+      loadView('assets/footer');
     }
 
     public function update(){
@@ -80,10 +80,10 @@ class LocationsController{
       $locations = $locationsModel->getAll();
 
       // show views
-      loadView('theme/header');
+      loadView('assets/header');
       loadView('locations/overview', [
           'locations' => $locations,
       ]);
-      loadView('theme/footer');
+      loadView('assets/footer');
     }
 }

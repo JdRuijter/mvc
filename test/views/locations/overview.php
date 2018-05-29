@@ -11,14 +11,11 @@
 
 <a href='index.php?controller=locations&action=addForm'>Toevoegen</a>
 <table class="table table-striped table-bordered table-hover">
-  <thead>
     <tr>
       <th>ID</th>
       <th>Locatie</th>
       <th></th><th></th>
     </tr>
-  </thead>
-  <tbody>
     <?php foreach ($locations as $row): ?>
     <tr>
       <td><?php echo $row->id ?></td>
@@ -27,5 +24,4 @@
       <td><a href="index.php?controller=locations&action=delete&id=<?php echo $row->id; ?>">Verwijder</a></td>
     </tr>
   <?php endforeach; ?>
-  </tbody>
 </table>
